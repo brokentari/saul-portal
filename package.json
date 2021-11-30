@@ -24,7 +24,8 @@
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "onestop": "yarn build && yarn start"
+    "onestop": "yarn build && yarn start",
+    "dev": "react-scripts --openssl-legacy-provider start"
   },
   "eslintConfig": {
     "extends": [
