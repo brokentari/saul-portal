@@ -48,5 +48,8 @@
   "engines": {
     "node": "17.1.0",
     "yarn": "1.22.15"
+  },
+  "devDependencies": {
+    "tslint-config-prettier": "^1.18.0"
   }
 }

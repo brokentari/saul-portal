@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-const UnitBtn = (unit: string, setUnit: (unit: string) => void) => {
+const UnitBtn = (handler: { unit: string, setUnit: (unit: string) => void }) => {
     const changeUnit = () => {
-        unit === "imperial" ? setUnit("metric") : setUnit("imperial");
+        handler.unit === "imperial" ? handler.setUnit("metric") : handler.setUnit("imperial");
     };
 
     return (
         <Button onClick={changeUnit}>
-            Change to {unit === "imperial" ? "°C" : "°F"} unit
+            Change to {handler.unit === "imperial" ? "°C" : "°F"} unit
         </Button>
     );
 };
