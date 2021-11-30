@@ -8,17 +8,17 @@ import {
     ArrowDown,
 } from "./WeatherDay.styles";
 
-const WeatherDay = ({ min, max, weatherType, unit }) => {
+const WeatherDay = (weatherInfo: { min: string, max: string, weatherType: string, unit: string }) => {
     return (
         <Wrapper>
             <Container>
                 <Temperature>
                     <ArrowDown>↓</ArrowDown>
-                    {min} &ensp; <ArrowUp>↑</ArrowUp>
-                    {max} {getUnit(unit)}
+                    {weatherInfo.min} &ensp; <ArrowUp>↑</ArrowUp>
+                    {weatherInfo.max} {getUnit(weatherInfo.unit)}
                 </Temperature>
             </Container>
-            <WeatherDescription>{weatherType}</WeatherDescription>
+            <WeatherDescription>{weatherInfo.weatherType}</WeatherDescription>
         </Wrapper>
     );
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const UnitBtn = ({ unit, setUnit }) => {
+const UnitBtn = (unit: string, setUnit: (unit: string) => void) => {
     const changeUnit = () => {
         unit === "imperial" ? setUnit("metric") : setUnit("imperial");
     };

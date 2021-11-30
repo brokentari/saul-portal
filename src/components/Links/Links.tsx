@@ -1,4 +1,4 @@
-import { Wrapper, Container, Heading, Link } from "./Links.style.js";
+import { Wrapper, Container, Heading, Link } from "./Links.style";
 
 const Links = () => {
     return (

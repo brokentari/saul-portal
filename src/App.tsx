@@ -7,15 +7,16 @@ import QuoteSection from "./components/Quote/QuoteSection";
 import Artwork from "./components/Artwork/Artwork";
 
 import GlobalStyle from "./GlobalStyle";
-import Links from "./components/Links/Links.js";
+import Links from "./components/Links/Links";
 import styled from "styled-components";
 
+
 const App = () => {
-    const [weatherInfo, setWeatherInfo] = useState();
+    const [weatherInfo, setWeatherInfo] = useState<{ min: string, max: string, type: string }>();
 
     const [unit, setUnit] = useState("imperial");
 
-    const [currentQuote, setQuote] = useState();
+    const [currentQuote, setQuote] = useState<{ content: string, author: string }>();
 
     useEffect(() => {
         getWeather(unit).then((data) => setWeatherInfo(data));

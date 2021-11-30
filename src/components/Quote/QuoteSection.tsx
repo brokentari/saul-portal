@@ -1,11 +1,11 @@
 import { Wrapper, Quote, Author } from "./QuoteSection.style";
 
 // This shit needs to get fixed
-const QuoteSection = ({ content, author }) => {
+const QuoteSection = (quoteInfo: { content: string, author: string }) => {
     return (
         <Wrapper>
-            <Quote>"{content}"</Quote>
-            <Author>- {author}</Author>
+            <Quote>"{quoteInfo.content}"</Quote>
+            <Author>- {quoteInfo.author}</Author>
         </Wrapper>
     );
 };
