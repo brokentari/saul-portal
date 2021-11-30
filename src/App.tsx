@@ -66,21 +66,20 @@ export default App;
 const HomePage = styled.div`
     display: flex;
     flex-flow: column;
-    height: 100%;
+    height: 100vh;
 `;
 
 const Wrapper = styled.div`
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     padding: 10rem;
     display: flex;
     justify-content: space-between;
     background-color: var(--bg-color);
-    height: 92vh;
+    height: 100vh;
     padding: 12rem 20rem;
 `;
 
 const Container = styled.div`
-    flex: 1 1 auto;
     display: flex;
     flex: 2;
     flex-direction: column;
