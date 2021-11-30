@@ -1,5 +1,6 @@
 export const getWeather = async (unit: string) => {
-  const city = "Boston";
+  const city = await getLocation();
+  console.log(city);
   let key = process.env.REACT_APP_AUTH_TOKEN;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=${key}`;
 
@@ -27,6 +28,13 @@ export const getRandomQuote = async () => {
   return data;
 };
 
+
+export const getLocation = async () => {
+  const response = await fetch("https://ip.nf/me.json");
+  const data = await response.json();
+  console.log(data);
+  return data.ip.city;
+}
 
 
 

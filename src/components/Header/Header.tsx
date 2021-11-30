@@ -9,9 +9,9 @@ const Header = (weather: { weatherState?: { min: string, max: string, type: stri
         {
             (
                 <WeatherDay
-                    min={weather.weatherState?.min || "NaN"}
-                    max={weather.weatherState?.max || "NaN"}
-                    weatherType={weather.weatherState?.type || "NaN"}
+                    min={weather.weatherState?.min || ""}
+                    max={weather.weatherState?.max || ""}
+                    weatherType={weather.weatherState?.type || ""}
                     unit={weather.unit}
                 />
             )

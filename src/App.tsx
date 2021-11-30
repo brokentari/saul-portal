@@ -39,6 +39,7 @@ const App = () => {
         getRandomQuote().then((data) => setQuote(data));
     }, []);
 
+
     return (
         <HomePage>
             <Navbar brand={brand} links={links} />
