@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Time from "./Time/Time";
 import WeatherDay from "./WeatherDay/WeatherDay";
 import { Wrapper } from "./Header.style";

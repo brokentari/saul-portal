@@ -14,7 +14,7 @@ import styled from "styled-components";
 const App = () => {
     const [weatherInfo, setWeatherInfo] = useState<{ min: string, max: string, type: string }>();
 
-    const [unit, setUnit] = useState("imperial");
+    const [unit] = useState("imperial");
 
     const [currentQuote, setQuote] = useState<{ content: string, author: string }>();
 
