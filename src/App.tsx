@@ -40,7 +40,7 @@ const App = () => {
     }, []);
 
     return (
-        <div>
+        <HomePage>
             <Navbar brand={brand} links={links} />
             <Wrapper>
                 <GlobalStyle />
@@ -57,13 +57,20 @@ const App = () => {
                     )}
                 </Container>
             </Wrapper>
-        </div>
+        </HomePage>
     );
 };
 
 export default App;
 
+const HomePage = styled.div`
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+`;
+
 const Wrapper = styled.div`
+    flex: 0 0 auto;
     padding: 10rem;
     display: flex;
     justify-content: space-between;
@@ -73,9 +80,9 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
+    flex: 1 1 auto;
     display: flex;
     flex: 2;
     flex-direction: column;
     justify-content: space-between;
-    
 `;
