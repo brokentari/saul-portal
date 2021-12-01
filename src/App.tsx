@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getRandomQuote, getWeather } from "./api";
 
-// import UnitBtn from "./components/UnitBtn/UnitBtn";
 import Header from "./components/Header/Header";
 import QuoteSection from "./components/Quote/QuoteSection";
 import Artwork from "./components/Artwork/Artwork";
@@ -22,10 +21,9 @@ const App = () => {
     const navigation = {
         brand: { name: "saul's portal", to: "/" },
         links: [
-            { name: "home", to: "/about" },
-            { name: "projects", to: "/blog" },
+            { name: "projects", to: "/projects" },
             { name: "sandbox", to: "/dev" },
-            { name: "about", to: "/design" }
+            { name: "about", to: "/about" }
         ]
     }
 
@@ -46,7 +44,6 @@ const App = () => {
             <Wrapper>
                 <GlobalStyle />
                 <Artwork />
-                {/* <UnitBtn unit={unit} setUnit={setUnit} /> */}
                 <Container>
                     <Header weatherState={weatherInfo} unit={unit} />
                     <Links />
@@ -64,13 +61,13 @@ const App = () => {
 
 export default App;
 
-const HomePage = styled.div`
+export const HomePage = styled.div`
     display: flex;
     flex-flow: column;
     height: 100vh;
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
     flex: 0 1 auto;
     padding: 10rem;
     display: flex;
@@ -80,7 +77,7 @@ const Wrapper = styled.div`
     padding: 12rem 20rem;
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
     display: flex;
     flex: 2;
     flex-direction: column;

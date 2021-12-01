@@ -1,11 +1,24 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import About from './components/About/About';
 import App from './App';
+import Projects from './components/Projects/Projects';
+import Sandbox from './components/Sandbox/Sandbox';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/dev" element={<Sandbox />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
