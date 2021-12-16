@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Theme = {
     colors: {
         bg: `#fff`,
-        dark: `#282c34`,
+        dark: `#1a1b26`,
         light: `#EEEEEE`,
         red: `#ff5851`,
     },

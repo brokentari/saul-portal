@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   :root {
     --maxWidth: 1280px;
-    --bg-color: #282C34;
+    --bg-color: #1a1b26;
     --white: #fff;
     --lightGray: #dadbdb;
     --darkGray: #ABB2BF;
