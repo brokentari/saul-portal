@@ -12,7 +12,7 @@ const Links = () => {
                     canvas
                 </Link>
                 <Link href="https://calendar.google.com" target="_blank">calendar</Link>
-                <Link href="https://outlook.office365.com/mail/inbox" target="_blank">outlook</Link>
+                <Link href="https://outlook.office.com" target="_blank">outlook</Link>
                 <Link target="_blank" href="https://drive.google.com/drive/u/0/folders/1zKyJSIlqU5ad7IGzLdo3FEOCVBxtKJ2g">
                     drive
                 </Link>

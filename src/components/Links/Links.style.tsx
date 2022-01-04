@@ -4,6 +4,10 @@ export const Wrapper = styled.div`
     /* margin-top: 80px; */
     display: flex;
     justify-content: space-between;
+    
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+        margin-top: 2.5rem;
+    }
 `;
 
 export const Container = styled.div`

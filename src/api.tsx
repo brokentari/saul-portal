@@ -7,6 +7,7 @@ export const getWeather = async (unit: string) => {
   const response = await fetch(url);
 
   if (response.status !== 200) {
+    console.log("Weather info not returned. Error: " + response)
     return { min: "Nan", max: "Nan", type: "" }
   }
 

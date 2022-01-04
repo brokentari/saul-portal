@@ -68,13 +68,16 @@ export const HomePage = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    flex: 0 1 auto;
-    padding: 10rem;
-    display: flex;
     justify-content: space-between;
     background-color: var(--bg-color);
     height: 100vh;
-    padding: 12rem 20rem;
+    
+    @media screen and (min-width: 501px) {
+        flex: 0 1 auto;
+        padding: 10rem;
+        display: flex;
+        padding: 12rem 20rem;
+    }
 `;
 
 export const Container = styled.div`

@@ -14,4 +14,9 @@ export const H2 = styled.div`
 
 export const Wrapper = styled.div`
     font-family: "fira sans", sans-serif;
+
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+        margin-top: 10vh;
+        text-align: center;
+    }    
 `;

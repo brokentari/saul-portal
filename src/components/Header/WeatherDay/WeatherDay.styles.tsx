@@ -11,6 +11,10 @@ export const Container = styled.div`
     height: 60px;
     align-items: center;
     justify-content: flex-end;
+
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+        justify-content: center;
+    }    
 `;
 
 export const Temperature = styled.div`

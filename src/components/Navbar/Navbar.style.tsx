@@ -17,11 +17,18 @@ export const Nav = styled.nav`
     background: ${Theme.colors.dark};
     font-family: ${Theme.fonts.heading};
     color: ${Theme.colors.light};
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex: 0 0 auto;
     a { color: white; text-decoration: none; };
+
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 501px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 0 0 auto;
+    }
     `;
 
 export const Brand = styled.a`
@@ -33,10 +40,18 @@ export const Brand = styled.a`
     padding-right: 1rem;`;
 
 export const Ul = styled.ul`
-    display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;`;
+    -webkit-overflow-scrolling: touch;
+    
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 501px) {
+        display: flex;
+    }
+    `;
 
 export const Li = styled.li`
     flex: 0 0 auto;
