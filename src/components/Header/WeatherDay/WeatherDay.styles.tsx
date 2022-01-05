@@ -24,6 +24,10 @@ export const Temperature = styled.div`
 
 export const WeatherDescription = styled.div`
     font-size: var(--fontBig);
+
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+        text-align: center;
+    }    
 `;
 
 export const ArrowUp = styled.span`

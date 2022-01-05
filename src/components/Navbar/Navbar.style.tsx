@@ -21,6 +21,11 @@ export const Nav = styled.nav`
 
     @media screen and (min-width: 0px) and (max-width: 500px) {
         text-align: center;
+        padding-top: 2rem;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+       
     }
 
     @media screen and (min-width: 501px) {
@@ -37,7 +42,8 @@ export const Brand = styled.a`
     font-family: ${Theme.fonts.heading};
     font-size: 2rem;
     margin-left: 1rem;
-    padding-right: 1rem;`;
+    padding-right: 1rem;
+    `;
 
 export const Ul = styled.ul`
     flex-wrap: nowrap;

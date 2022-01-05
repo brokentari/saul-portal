@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --maxWidth: 1280px;
     --bg-color: #1a1b26;
     --white: #fff;
     --lightGray: #dadbdb;
@@ -17,6 +16,10 @@ const GlobalStyle = createGlobalStyle`
     --fontBig: 1.625rem;
     --fontMed: 1.1rem;
     --fontSmall: 0.9rem;
+  }
+  
+  html {
+    background-color: #1a1b26;
   }
 
   * {

@@ -71,7 +71,12 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     background-color: var(--bg-color);
     height: 100vh;
-    
+
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+        height: 110vh;
+        padding-bottom: 3rem;
+    }
+
     @media screen and (min-width: 501px) {
         flex: 0 1 auto;
         padding: 10rem;

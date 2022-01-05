@@ -9,6 +9,7 @@ import About from './components/About/About';
 import App from './App';
 import Projects from './components/Projects/Projects';
 import Sandbox from './components/Sandbox/Sandbox';
+import NotFound from './components/NotFound/NotFound'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/dev" element={<Sandbox />} />
+      <Route path="/*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

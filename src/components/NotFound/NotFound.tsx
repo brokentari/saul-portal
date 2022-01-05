@@ -1,7 +1,7 @@
 import GlobalStyle from "../../GlobalStyle";
 import { HomePage, Wrapper } from "../../App";
 import Navbar from "../Navbar/Navbar";
-import MobileRestrict from "../MobileRestricted/MobileRestrict";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 const navigation = {
     brand: { name: "saul's portal", to: "/" },
@@ -14,16 +14,16 @@ const navigation = {
 
 const { brand, links } = navigation;
 
-const Sandbox = () => {
+const NotFound = () => {
     return (
         <HomePage>
             <Navbar brand={brand} links={links} />
             <Wrapper>
                 <GlobalStyle />
-                <MobileRestrict />
+                <ErrorMessage content="Page could not be found :(" />
             </Wrapper>
         </HomePage>
     )
 }
 
-export default Sandbox;
+export default NotFound;

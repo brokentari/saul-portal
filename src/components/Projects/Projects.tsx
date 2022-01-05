@@ -1,7 +1,7 @@
 import GlobalStyle from "../../GlobalStyle";
 import { HomePage, Wrapper } from "../../App";
 import Navbar from "../Navbar/Navbar";
-
+import MobileRestrict from "../MobileRestricted/MobileRestrict";
 const navigation = {
     brand: { name: "saul's portal", to: "/" },
     links: [
@@ -19,6 +19,7 @@ const Projects = () => {
             <Navbar brand={brand} links={links} />
             <Wrapper>
                 <GlobalStyle />
+                <MobileRestrict />
             </Wrapper>
         </HomePage>
     )
