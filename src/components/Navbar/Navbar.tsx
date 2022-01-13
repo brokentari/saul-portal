@@ -1,8 +1,7 @@
 import { Nav, Brand, Ul, Li } from './Navbar.style'
 
-import {
-    Link
-} from "react-router-dom";
+
+import { NavLink } from 'react-router-dom';
 
 const Navbar = (props: {
     brand: { name: string; to: string },
@@ -12,7 +11,7 @@ const Navbar = (props: {
 
     const NavLinks: any = () => links.map((link: { name: string, to: string }) =>
         <Li key={link.name}>
-            <Link to={link.to}>{link.name}</Link>
+            <NavLink className={(navData) => navData.isActive ? "current" : ""} to={link.to}>{link.name}</NavLink>
         </Li>);
 
 

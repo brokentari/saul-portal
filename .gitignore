@@ -10,6 +10,7 @@
 
 # production
 /build
+target
 
 # misc
 .DS_Store
@@ -18,9 +19,16 @@
 .env.test.local
 .env.production.local
 /.vscode
+.anchor
+**/*.rs.bk
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 .env
+
+
+
+
+

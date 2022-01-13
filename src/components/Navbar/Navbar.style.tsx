@@ -24,17 +24,13 @@ export const Nav = styled.nav`
         padding-top: 2rem;
     }
 
-    @media screen and (min-width: 0px) and (max-width: 500px) {
-       
-    }
-
     @media screen and (min-width: 501px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex: 0 0 auto;
     }
-    `;
+`;
 
 export const Brand = styled.a`
     font-weight: bold;
@@ -43,7 +39,7 @@ export const Brand = styled.a`
     font-size: 2rem;
     margin-left: 1rem;
     padding-right: 1rem;
-    `;
+`;
 
 export const Ul = styled.ul`
     flex-wrap: nowrap;
@@ -57,7 +53,7 @@ export const Ul = styled.ul`
     @media screen and (min-width: 501px) {
         display: flex;
     }
-    `;
+`;
 
 export const Li = styled.li`
     flex: 0 0 auto;
@@ -81,4 +77,9 @@ export const Li = styled.li`
     line-height: 16px;
     margin: 0 10px ;
     text-decoration: none;
-    white-space: nowrap;`;
+    white-space: nowrap;
+
+    .current {
+        border-bottom: 2px solid white;
+    }
+`;

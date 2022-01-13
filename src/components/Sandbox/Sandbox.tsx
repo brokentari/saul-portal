@@ -2,6 +2,7 @@ import GlobalStyle from "../../GlobalStyle";
 import { HomePage, Wrapper } from "../../App";
 import Navbar from "../Navbar/Navbar";
 import MobileRestrict from "../MobileRestricted/MobileRestrict";
+import styled from "styled-components";
 
 const navigation = {
     brand: { name: "saul's portal", to: "/" },
@@ -21,9 +22,15 @@ const Sandbox = () => {
             <Wrapper>
                 <GlobalStyle />
                 <MobileRestrict />
-            </Wrapper>
-        </HomePage>
+                <Pong title="game" src="https://pong-nive9.ondigitalocean.app/" width="680" height="480" frameBorder="0" />
+            </Wrapper >
+        </HomePage >
     )
 }
 
 export default Sandbox;
+
+export const Pong = styled.iframe`
+    display: block;
+    margin: 0 auto;
+`;
