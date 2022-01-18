@@ -1,19 +1,11 @@
 # Saul's Portal
-### A custom startpage built with React.js
-![Nov05-08-51](https://user-images.githubusercontent.com/52547912/140478798-364f418d-74f5-4f7c-bab1-e3d6b3650c24.png)
 
-### Install
-```
-git clone https://github.com/brokentari/saul-portal.git
-cd saul-portal
-npm install
-```
-To make the weather widget work create a openweathermap account and create a api key. Create a .env file in the root of the project check out the `.env.example`.
+### A custom startpage built with React and Typescript
 
-To edit the weather location. Change the `city` variable in `src/api.js`. The city codes are available on [openweatherapi](https://openweathermap.org/).
+![Nov05-08-51](https://user-images.githubusercontent.com/26575404/150027662-855bb4d8-9de4-479d-8fcb-cb0d9386b792.png)
 
-Change artwork in `src/misc/artwork/` and change the file name to `artwork.jpg`.
+The home page acts as a portal to quick and useful information. Some of this information includes weather info retrieved from the OpenWeather API and a random quote from the Quotable API. Aside from that, it also contains a collection of quick links grouped by differnt categories.
 
-Edit the links in `src/components/Links/Links`.
+### Sandbox
 
-Then run `npm run build` when you are done editing the files.
+This section is used to test out different technologies that can be display within a webpage. Currently, the Sandbox page contains a WebAssembly program that consists of a Pong game written in Rust. More info about the project is in the Sandbox page.
