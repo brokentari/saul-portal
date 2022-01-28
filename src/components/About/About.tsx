@@ -1,8 +1,8 @@
 import GlobalStyle from "../../GlobalStyle";
-import { HomePage, Wrapper } from "../../App";
+import {HomePage, Wrapper } from "../../App";
 import Navbar from "../Navbar/Navbar";
 import MobileRestrict from "../MobileRestricted/MobileRestrict";
-
+import { FooterWithIcons } from "../../App";
 
 const navigation = {
     brand: { name: "saul's portal", to: "/" },
@@ -22,7 +22,9 @@ const About = () => {
             <Wrapper>
                 <GlobalStyle />
                 <MobileRestrict />
+                
             </Wrapper>
+            <FooterWithIcons />
         </HomePage>
     )
 }

@@ -10,6 +10,9 @@ import Links from "./components/Links/Links";
 import styled from "styled-components";
 import Navbar from "./components/Navbar/Navbar";
 
+import { IconContext } from "react-icons/lib";
+import { GoOctoface } from 'react-icons/go';
+import { AiFillLinkedin, AiTwotoneMail } from 'react-icons/ai'
 
 const App = () => {
     const [weatherInfo, setWeatherInfo] = useState<{ min: string, max: string, type: string }>();
@@ -53,8 +56,10 @@ const App = () => {
                             author={currentQuote.author}
                         />
                     )}
-                </Container>
+                    
+                </Container>    
             </Wrapper>
+            <FooterWithIcons />
         </HomePage>
     );
 };
@@ -91,3 +96,26 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-between;
 `;
+
+export const Footer = styled.div`
+    color: white;
+    display: flex;
+    justify-content: center;
+`
+
+export const FooterWithIcons = () =>{ 
+    return (
+        <IconContext.Provider value={{ color: "white", size: "2.5em", style: { verticalAlign: 'middle', margin: "0 0.5em 0.75em"} }}>
+            <Footer> 
+                <a href="https://github.com/brokentari">
+                    <GoOctoface />
+                </a>
+                <a href="https://linkedin.com/in/saulreyna">
+                    <AiFillLinkedin />
+                </a>
+                <a href="mailto:saul.reyna90@gmail.com">
+                    <AiTwotoneMail />
+                </a>
+            </Footer>
+        </IconContext.Provider> )
+}
